@@ -67,7 +67,7 @@ static const t_builtin *buscar_builtin(const char *nombre){
 }
 //==========================================================================================//
 static int builtin_exit(const t_comando *cmd, t_shell *shell){
-    int codigo = shell -> utlimo_estado;
+    int codigo = shell -> ultimo_estado;
 
     if((cmd -> argc) > 2){
         fprintf(stderr, "exit: demasiados argumentos\n");

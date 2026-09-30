@@ -35,7 +35,7 @@ int main(){
         }
 
         if (cmd->argc == 0) {
-            liberar_comando(cmd);
+            libera_comando(cmd);
             continue;
         }
 
@@ -46,7 +46,7 @@ int main(){
             shell.ultimo_estado = 127;
         }
 
-        liberar_comando(cmd);
+        libera_comando(cmd);
     }
 
     return shell.ultimo_estado;
@@ -60,7 +60,7 @@ void quitar_salto_de_linea(char *s){
 
 }
 
-void mostar_prompt(void){
+void mostrar_prompt(void){
     char ruta[TAM_RUTA];
 
     if(getcwd(ruta,sizeof(ruta)) != NULL){
